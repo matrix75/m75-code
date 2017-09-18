@@ -1,4 +1,4 @@
-package chp.crypto;
+package chp.crypto.examples;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

@@ -1,4 +1,4 @@
-package chp.crypto;
+package chp.crypto.examples;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
