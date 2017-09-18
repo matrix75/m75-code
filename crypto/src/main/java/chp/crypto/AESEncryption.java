@@ -6,6 +6,8 @@ import javax.crypto.SecretKey;
 import javax.xml.bind.DatatypeConverter;
 
 /**
+ * Simple Encryption Examples
+ * 
  * This example program shows how AES encryption and decryption can be done in Java.
  * Please note that secret key and encrypted text is unreadable binary and hence 
  * in the following program we display it in hexadecimal format of the underlying bytes.

@@ -5,13 +5,13 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- *
+ * Simple Hashing examples
  */
-public class AppCrypto 
+public class Hashing 
 {
     public static void main( String[] args )
     {
-    	AppCrypto app = new AppCrypto();
+    	Hashing app = new Hashing();
     	app.hash("Hello World!");
     	
     }
