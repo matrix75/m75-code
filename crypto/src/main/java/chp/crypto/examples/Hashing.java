@@ -19,9 +19,10 @@ public class Hashing
 	private void hash(String strToHash) {
 		MessageDigest digest;
 		try {
+			System.out.println("String to Hash: "+strToHash);
 			digest = MessageDigest.getInstance("SHA-256");
 			byte[] byteHash = digest.digest(strToHash.getBytes(StandardCharsets.UTF_8));
-			System.out.println("Raw Bytes: "+byteHash);
+			//System.out.println("Raw Bytes: "+byteHash);
 			
 			
 	        //convert the byte to hex format method 1
