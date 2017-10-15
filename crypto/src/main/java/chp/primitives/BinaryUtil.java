@@ -14,7 +14,7 @@ public class BinaryUtil {
 			binary.append(' ');
 		}
 
-		return binary.toString();
+		return binary.toString().trim();
 	}
 
 	public String bytesToBinaryStr2(byte[] bytes) {
@@ -28,7 +28,7 @@ public class BinaryUtil {
 			binary.append((bytes[i / Byte.SIZE] << i % Byte.SIZE & 0x80) == 0 ? '0' : '1'); 																				
 		}
 
-		return binary.toString();
+		return binary.toString().trim();
 	}
 
 	public String bytesToBinaryStr3(byte[] bytes) {
@@ -39,6 +39,6 @@ public class BinaryUtil {
 			binary.append(' ');
 		}
 
-		return binary.toString();
+		return binary.toString().trim();
 	}
 }

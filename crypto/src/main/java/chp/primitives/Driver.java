@@ -13,20 +13,22 @@ public class Driver {
 		
 		byte[] byteArray = initalString.getBytes();
 		System.out.println("ByteArray Size:" + byteArray.length);
+		
+		//Hex methods
+		String hexString = hex.bytesToHexStr(byteArray);
+		System.out.println("HEX form: size: "+hexString.replaceAll("\\s+","").length()+": " + hexString);
 
 		//Binary methods:
 		String binaryString1 = binary.bytesToBinaryStr(byteArray);
-		System.out.println("Binary form1: size:"+binaryString1.length() +": " +binaryString1);
+		System.out.println("Binary form1: size:"+binaryString1.replaceAll("\\s+","").length() +": " +binaryString1);
 
 		String binaryString2 = binary.bytesToBinaryStr2(byteArray);
-		System.out.println("Binary form2: size:"+binaryString2.length() +": " +binaryString2);
+		System.out.println("Binary form2: size:"+binaryString2.replaceAll("\\s+","").length() +": " +binaryString2);
 		
 		String binaryString3 = binary.bytesToBinaryStr3(byteArray);
-		System.out.println("Binary form3: size:"+binaryString3.length() +": " +binaryString3);
+		System.out.println("Binary form3: size:"+binaryString3.replaceAll("\\s+","").length() +": " +binaryString3);
 
-		//Hex methods
-		String hexString = hex.bytesToHexStr(byteArray);
-		System.out.println("HEX form: size: "+hexString.length()+": " + hexString);
+
 
 	}
 

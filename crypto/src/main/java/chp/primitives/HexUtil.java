@@ -15,7 +15,18 @@ public class HexUtil {
 												// operator ">>>" shifts a zero into the leftmost position
 			hexChars[j * 2 + 1] = hexArray[v & 0x0F];
 		}
-		return new String(hexChars);
+		
+		//formating logic - simply space hex out by pairs
+		StringBuilder sb = new StringBuilder(new String(hexChars));
+		int j = 0;
+		for (int i = 2; i < sb.length(); i += 2) {
+		    if(!(i+j>=sb.length())) {
+			  sb.insert(i+j, ' ');
+		    }
+		    j++;
+		}
+		
+		return sb.toString();
 
 	}
 	
