@@ -1,4 +1,4 @@
-package chp.primatives;
+package chp.primitives;
 
 public class HexUtil {	
 	
